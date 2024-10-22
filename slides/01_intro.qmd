@@ -71,12 +71,13 @@ author: Daniel Sabanés Bové and Joe Zhu
 
 | Time               | Topic                                        |
 |--------------------|:---------------------------------------------|
-| 14:00 - 14:30 CEST | Introduction and outline                     |
-| 14:30 - 15:15 CEST | R packages, what are they? + practical       |
-| 15:15 - 15:45 CEST | Workflow for creating R packages + practical |
-| 15:45 - 16:30 CEST | Package quality + exercise                   |
-| 16:30 - 17:15 CEST | Publication + practical                      |
-| 17:15 - 17:30 CEST | Conclusion                                   |
+| 12:00 - 12:15 GMT+8 | Introduction and outline                     |
+| 12:15 - 12:55 GMT+8 | R packages, what are they? + practical       |
+| 12:55 - 13:25 GMT+8 | Workflow for creating R packages + practical |
+| 13:25 - 13:40 GMT+8 | Break                                        |
+| 13:40 - 14:20 GMT+8 | Package quality + exercise                   |
+| 14:20 - 14:50 GMT+8 | Publication + practical                      |
+| 15:50 - 15:00 GMT+8 | Conclusion                                   |
 
 
 ## House-keeping
