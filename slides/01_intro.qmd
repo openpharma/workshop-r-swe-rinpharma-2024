@@ -2,7 +2,7 @@
 title: "1 Introduction"
 description: "Introduction and outline of program"
 image: thumbnails/hello.jpg
-author: Daniel Sabanés Bové and Friedrich Pahlke
+author: Daniel Sabanés Bové and Joe Zhu
 ---
 
 ## Disclaimer
@@ -28,19 +28,18 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
 :::
 :::
 
-## Friedrich
+## Joe
 
 ::: columns
 ::: {.column width="70%"}
--   Since 2008 self-employed consultant for computer science and data science as well as biostatistics
--   Co-founder and CEO of RPACT, a company developing the formally validated R package [rpact](https://cran.r-project.org/package=rpact "rpact: Confirmatory Adaptive Clinical Trial Design and Analysis") with 28 releases on CRAN since 2018
--   Co-founder of [RCONIS](https://rconis.com)
--   Trained software architect; R programmer since 2004; R Shiny developer since 2019
--   Feel free to connect at [`r fontawesome::fa("linkedin")` LinkedIn](http://www.linkedin.com/in/pahlke "Friedrich Pahlke at LinkedIn") or [`r fontawesome::fa("github")` Github](https://github.com/fpahlke "Friedrich Pahlke at GitHub")
+-   Ph.D. in Statistics
+-   Postdoc at the University of Oxford for 6 years, Data Scientist at Roche for the last 4 years, technical engineering lead for the NEST SME team, technical lead for auto-translation and slide automation initiatives at Roche.
+-   Multiple open-source packages on Github and CRAN, see [this page](https://shajoezhu.github.io/software/) for details.
+-   Feel free to connect at [`r fontawesome::fa("linkedin")` LinkedIn](http://www.linkedin.com/in/joe-zhu-464b5818 "Joe Zhu at LinkedIn") or [`r fontawesome::fa("github")` Github](https://github.com/shajoezhu "Joe Zhu at GitHub")
 :::
 
 ::: {.column width="30%"}
-![](resources/friedrich.jpg)
+![](resources/joezhu.jpg)
 :::
 :::
 
@@ -111,7 +110,7 @@ author: Daniel Sabanés Bové and Friedrich Pahlke
 :::
 
 -   Applying concept of "Good XYZ Practice" to SWE with R
--   Improve **quality** and **longevity** of R code/packages  
+-   Improve **quality** and **longevity** of R code/packages
 -   Not a universal standard; we share our perspectives
 -   Collection of best practices
 -   Do not reinvent the wheel: learn from the community
@@ -210,16 +209,16 @@ knitr::include_graphics("resources/pkg_graph.png")
 
 # License information
 
-- Creators (initial authors): 
-  Daniel Sabanes Bove 
-  [`r fontawesome::fa("github")`](https://github.com/danielinteractive/) 
+- Creators (initial authors):
+  Daniel Sabanes Bove
+  [`r fontawesome::fa("github")`](https://github.com/danielinteractive/)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/),
-  Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/) 
+  Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/),
-  Kevin Kunzmann 
-  [`r fontawesome::fa("github")`](https://github.com/kkmann/) 
+  Kevin Kunzmann
+  [`r fontawesome::fa("github")`](https://github.com/kkmann/)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/kevin-kunzmann-6486a11bb/)
-- In the current version, changes were done by (later authors): 
+- In the current version, changes were done by (later authors):
   Andrew Bean
   [`r fontawesome::fa("github")`](https://github.com/andrew-bean)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrew-bean-83539116/),
@@ -230,4 +229,7 @@ knitr::include_graphics("resources/pkg_graph.png")
   [`r fontawesome::fa("github")`](https://github.com/philboileau)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/philippe-boileau-773270205/)
   [`r fontawesome::fa("globe")`](https://pboileau.ca/)
+  Joe Zhu
+  [`r fontawesome::fa("github")`](https://github.com/shajoezhu)
+  [`r fontawesome::fa("linkedin")`](http://www.linkedin.com/in/joe-zhu-464b5818)
 {{< include _license_footer.qmd >}}

@@ -2,13 +2,13 @@
 title: "3 An R Package Engineering Workflow"
 description: "Workflow for creating R packages + practical"
 image: thumbnails/workflow.jpg
-author: Friedrich Pahlke
+author: Joe Zhu
 ---
 
 # [{{< fa face-grin-stars >}}]{.yellow} Motivation
 
 ```{=html}
-<!-- 
+<!--
 - One-off scripts, prototype functions
 - R generic functions
 - Design docs
@@ -52,8 +52,8 @@ pexels.com]{.copyright}](thumbnails/workflow1.jpg){fig-align="center"}
 2.  Concept creation
 3.  Validation planning
 4.  Specification:
-      a. User Requirements Spec (URS), 
-      b. Functional Spec (FS), and 
+      a. User Requirements Spec (URS),
+      b. Functional Spec (FS), and
       c. Software Design Spec (SDS)
       d. Test Plan (TP)
 :::
@@ -130,7 +130,7 @@ pexels.com]{.copyright}](thumbnails/workflow2.jpg){fig-align="center"}
 #| render: true
 #| fig.cap: "Cost distribution among software process activities"
 #| fig.subcap: "[doi:10.14569/IJACSA.2020.0110375](https://dx.doi.org/10.14569/IJACSA.2020.0110375)"
-library("ggplot2") 
+library("ggplot2")
 library("dplyr")
 classes <- c("Design (12%)", "Coding (6%)", "Testing (12%)", "Maintenance (70%)")
 effortData <- data.frame(
@@ -152,7 +152,7 @@ ggplot(effortData, aes(x = "", y = prop, fill = class)) +
   geom_bar(width = 1, stat = "identity", color = "white") +
   coord_polar("y", start = -32) +
   geom_text(aes(y = lab.ypos, label = prop), color = "white")+
-  scale_fill_manual(values = mycols) + 
+  scale_fill_manual(values = mycols) +
   labs(fill = "Activity") +
   theme_void()
 ```
@@ -167,7 +167,7 @@ ggplot(effortData, aes(x = "", y = prop, fill = class)) +
 #| render: true
 #| fig.cap: "Origin of errors in system development"
 #| fig.subcap: "[Boehm, B. (1981). Software Engineering Economics. Prentice Hall.](https://dl.acm.org/doi/10.5555/539425)"
-library("ggplot2") 
+library("ggplot2")
 library("dplyr")
 classes <- c("Analysis Errors (60%)", "Design and Implementation Errors (40%)")
 effortData <- data.frame(
@@ -189,7 +189,7 @@ ggplot(effortData, aes(x = "", y = prop, fill = class)) +
   geom_bar(width = 1, stat = "identity", color = "white") +
   coord_polar("y", start = -32) +
   geom_text(aes(y = lab.ypos, label = prop), color = "white")+
-  scale_fill_manual(values = mycols) + 
+  scale_fill_manual(values = mycols) +
   labs(fill = "Activity") +
   theme_void()
 ```
@@ -285,7 +285,7 @@ The R package *simulatr* is intended to enable the creation of reproducible fake
 data for two independent groups. The function **must** allow flexible
 definition of sample size per group, mean per group, standard deviation per
 group. The reproducibility of the simulated data **must** be ensured via an
-optional seed. It **should** be possible to print the function result. The 
+optional seed. It **should** be possible to print the function result. The
 package **may** also facilitate graphical presentation of the simulated data.
 
 ## Example - Step 2: Design docs
@@ -375,7 +375,7 @@ Define that the result is a list[^7] which is defined as class[^8]:
 
 ```{r, echo = TRUE}
 getSimulatedTwoArmMeans <- function(n1, n2, mean1, mean2, sd1, sd2) {
-    result <- list(n1 = n1, n2 = n2, 
+    result <- list(n1 = n1, n2 = n2,
          mean1 = mean1, mean2 = mean2, sd1 = sd1, sd2 = sd2)
     result$data <- data.frame(
         group = c(rep(1, n1), rep(2, n2)),
@@ -413,11 +413,11 @@ Generic function `print`:
 
 ```{r, echo = TRUE, eval = FALSE}
 print.SimulationResult <- function(x, ...) {
-    args <- list(n1 = x$n1, n2 = x$n2, 
+    args <- list(n1 = x$n1, n2 = x$n2,
         mean1 = x$mean1, mean2 = x$mean2, sd1 = x$sd1, sd2 = x$sd2)
-    
+
     print(list(
-        args = format(args), 
+        args = format(args),
         data = dplyr::tibble(x$data)
     ), ...)
 }
@@ -435,9 +435,9 @@ x
 #'
 #' @param x a \code{SimulationResult} object to print.
 #' @param ... further arguments passed to or from other methods.
-#' 
+#'
 #' @examples
-#' x <- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, 
+#' x <- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5,
 #'      mean2 = 7, sd1 = 3, sd2 = 4, seed = 123)
 #' print(x)
 #'
@@ -449,11 +449,11 @@ x
 ```{r, echo = FALSE}
 #| style: font-size:0.8em!important;
 print.SimulationResult <- function(x, ...) {
-    args <- list(n1 = x$n1, n2 = x$n2, 
+    args <- list(n1 = x$n1, n2 = x$n2,
         mean1 = x$mean1, mean2 = x$mean2, sd1 = x$sd1, sd2 = x$sd2)
-    
+
     print(list(
-        args = format(args), 
+        args = format(args),
         data = dplyr::tibble(x$data)
     ), ...)
 }
@@ -552,11 +552,11 @@ boxplot of the fake data.
 
 -   Implement the generic functions `summary` and `cat`
 -   Implement the function `kable` known from the package
-    [knitr](https://cran.r-project.org/package=knitr) as generic. *Tip*: use 
+    [knitr](https://cran.r-project.org/package=knitr) as generic. *Tip*: use
     ```{r, echo = TRUE, eval = FALSE}
     #| code-line-numbers: false
     kable <- function(x) UseMethod("kable")
-    ``` 
+    ```
     to define kable as generic
 
 ## Task 7
@@ -591,13 +591,16 @@ Document your functions with
 -   Wickham, H. (2019). Advanced R, Second Edition.\
     Taylor & Francis Ltd. \[[Book](https://amzn.to/3uLnxLd) \|
     [Online](https://adv-r.hadley.nz/)\]
-    
+
 # License information
 
-- Creators (initial authors): 
+- Creators (initial authors):
   Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/)
-- In the current version, changes were done by (later authors): 
-  Andrew Bean 
-  [`r fontawesome::fa("github")`](https://github.com/andrew-bean) 
+- In the current version, changes were done by (later authors):
+  Andrew Bean
+  [`r fontawesome::fa("github")`](https://github.com/andrew-bean)
   [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/andrew-bean-83539116/)
+  Joe Zhu
+  [`r fontawesome::fa("github")`](https://github.com/shajoezhu)
+  [`r fontawesome::fa("linkedin")`](http://www.linkedin.com/in/joe-zhu-464b5818)
 {{< include _license_footer.qmd >}}
