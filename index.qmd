@@ -1,17 +1,16 @@
 ---
 title: "Good Software Engineering Practice for R Packages"
-description: 'useR! 2024 Tutorial'
-author: Daniel Sabanés Bové and Friedrich Pahlke
-institute: '[![RCONIS](slides/resources/RCONIS_100.png)](https://www.rconis.com "RPACT Company Website")'
-creator: Daniel Sabanés Bové and Friedrich Pahlke
-keywords: "rconis, gswep, r, gxp"
+description: 'R/Pharma 2024 Workshop'
+author: Daniel Sabanés Bové and Joe Zhu
+creator: Daniel Sabanés Bové and Joe Zhu
+keywords: "rpharma, gswep, r, gxp"
 email-obfuscation: javascript
-title-meta: 'rconis'
+title-meta: 'rpharma'
 ---
 
 ```{=html}
 <!--
-Creators (initial authors): 
+Creators (initial authors):
 - Daniel Sabanes Bove, https://github.com/danielinteractive/ and www.linkedin.com/in/danielsabanesbove/
 - Friedrich Pahlke, https://github.com/fpahlke/ and www.linkedin.com/in/pahlke/
 - Kevin Kunzmann, https://github.com/kkmann/ and https://www.linkedin.com/in/kevin-kunzmann-6486a11bb/
@@ -25,21 +24,21 @@ Creators (initial authors):
 
 The current version was edited by
 - Daniel Sabanes Bove, https://github.com/danielinteractive/ and www.linkedin.com/in/danielsabanesbove/
-- Friedrich Pahlke, https://github.com/fpahlke/ and www.linkedin.com/in/pahlke/
+- Joe Zhu, https://github.com/shajoezhu and http://www.linkedin.com/in/joe-zhu-464b5818
 
 License: This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.
-The source files are hosted at https://github.com/RCONIS/user2024-tutorial-gswep, which is forked from and a subset of the original version at https://github.com/RCONIS/workshop-r-swe-zrh,.
+The source files are hosted at https://github.com/openpharma/workshop-r-swe-rinpharma-2024, which is forked from and a subset of the original version at https://github.com/RCONIS/user2024-tutorial-gswep.
 
 Important: To use this work you must provide the name of the creators (initial authors), a link to the material, a link to the license, and indicate if changes were made.
 -->
 ```
 
-Welcome to the homepage of the tutorial *"Good Software Engineering Practice for R Packages"*, part of the [useR! Conference 2024](https://events.linuxfoundation.org/user/) in Salzburg, Austria. In this course you will learn hands-on skills and tools to engineer reliable R packages. The workshop will be conducted in about 3 hours and will be a mix of presentations and exercises. Participants need to be comfortable with writing functions in R and use their own laptops as a prerequisite.
+Welcome to the homepage of the tutorial *"Good Software Engineering Practice for R Packages"*, part of the [R/Pharma Conference 2024 APAC track](https://rinpharma.com/post/2024-07-17-apac-track/). In this course you will learn hands-on skills and tools to engineer reliable R packages. The workshop will be conducted in about 3 hours and will be a mix of presentations and exercises. Participants need to be comfortable with writing functions in R and use their own laptops as a prerequisite.
 
 ## Event Details
 
-This live event will be held on Monday July 8, 2024 14:00 - 17:30 CEST as an in-person tutorial in the room [Tennegau](https://userconf2024.sched.com/venue/Tennegau?iframe=no).
+This live event will be held on Monday October 28, 2024 12:00 - 15:00 GMT+8 as a [virtual tutorial](https://events.zoom.us/ev/AvobJEOTVwkUnH6_TgLZDZJauk4dxfm5jCG8JFNN9zukOcsVLvTN~AmO5XY5HRBcxkKG6Hga1aXZaYtpBSER6jHms1seP-NNOA0dhcQZUGJ2NWg).
 
 ## Description
 
@@ -51,7 +50,7 @@ This course is tailored for individuals who are comfortable with writing functio
 
 Learn, understand, and practice good software engineering rules. Participants will delve into the significance of good engineering habits to avoid the pitfalls of maintenance overload, inefficient development, and regulatory non-compliance. By emphasizing best practices, the course will guide them towards faster releases on CRAN, saving valuable time on refactoring for PoC to release version transitions, and fostering an open environment for community contributions on GitHub. All course materials, including R scripts, will be shared with participants via GitHub, providing easy access to resources for continued learning and application beyond the course.
 
-## Schedule 
+## Schedule
 
 | Time               | Topic                                        |
 |--------------------|:---------------------------------------------|
@@ -77,7 +76,7 @@ For the course, participants are required to use their own laptop to be able to 
 
 -   Excellent and very comprehensive [R Packages (2e)](https://r-pkgs.org/)
 -   (Hardcore) description about [Writing R Extensions](https://cran.r-project.org/doc/manuals/R-exts.html) works
--   Minimum Viable Good Practices for High Quality Statistical Software Packages: [openstatsguide](https://www.openstatsware.org/guide.html) 
+-   Minimum Viable Good Practices for High Quality Statistical Software Packages: [openstatsguide](https://www.openstatsware.org/guide.html)
 
 ## Past Events
 
@@ -87,3 +86,5 @@ For the course, participants are required to use their own laptop to be able to 
 -   [26th September 2023, Rockville, MD, US](https://openpharma.github.io/workshop-r-swe-md/)
 -   [16th and 17th October 2023, Montreal, QC, CA](https://openpharma.github.io/workshop-r-swe-mtl/)
 -   [18th and 19th April 2024, Zurich, CH](https://rconis.github.io/workshop-r-swe-zrh/)
+-   [8th July 2024, Salzburg, Austria](https://rconis.github.io/user2024-tutorial-gswep/)
+-   [1st August 2024, Beijing, CN](https://kkmann.github.io/workshop-r-swe/)

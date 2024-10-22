@@ -82,9 +82,9 @@ author: Daniel Sabanés Bové and Joe Zhu
 
 ## House-keeping
 
--   Course website at [RCONIS.github.io/user2024-tutorial-gswep](https://RCONIS.github.io/user2024-tutorial-gswep)
+-   Course website at [https://openpharma.github.io/workshop-r-swe-rinpharma-2024](https://openpharma.github.io/workshop-r-swe-rinpharma-2024)
     -   all slides
-    -   sources available at [github.com/RCONIS/user2024-tutorial-gswep](https://github.com/RCONIS/user2024-tutorial-gswep)
+    -   sources available at [https://github.com/openpharma/workshop-r-swe-rinpharma-2024](https://github.com/openpharma/workshop-r-swe-rinpharma-2024)
     -   all materials CC-BY-SA 4.0
 -   We offer a [gitter chat channel](https://matrix.to/#/#workshop-r-swe_community:gitter.im)
     -   use to ask your peers questions
