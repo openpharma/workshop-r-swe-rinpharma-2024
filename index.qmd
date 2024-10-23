@@ -86,5 +86,5 @@ For the course, participants are required to use their own laptop to be able to 
 -   [26th September 2023, Rockville, MD, US](https://openpharma.github.io/workshop-r-swe-md/)
 -   [16th and 17th October 2023, Montreal, QC, CA](https://openpharma.github.io/workshop-r-swe-mtl/)
 -   [18th and 19th April 2024, Zurich, CH](https://rconis.github.io/workshop-r-swe-zrh/)
--   [8th July 2024, Salzburg, Austria](https://rconis.github.io/user2024-tutorial-gswep/)
+-   [8th July 2024, Salzburg, AT](https://rconis.github.io/user2024-tutorial-gswep/)
 -   [1st August 2024, Beijing, CN](https://kkmann.github.io/workshop-r-swe/)
