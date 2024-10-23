@@ -18,4 +18,4 @@ Daniel Sabanés Bové studied statistics and obtained his PhD in 2013. He starte
 
 Principal data scientist, Roche
 
-Joe Zhu studied statistics and obtained his PhD in 2013. He started his academic career at the University of Oxford for 6 years, then worked 4 years at Roche as a Data scientist. He leads multiple technical inititives at Roche, including the NEST team, auto-translation and slide automation teams, (co-)author of multiple published R packages, and co-founder of the China Pharma R User Group.
+Joe Zhu studied statistics and obtained his PhD in 2013. He started his academic career at the University of Oxford for 6 years, then worked 4 years at Roche as a Data scientist. He leads multiple technical inititives at Roche, including the NEST team, auto-translation and slide automation teams, and is a (co-)author of multiple published R packages, and co-founder of the China Pharma R User Group.
