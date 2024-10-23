@@ -10,7 +10,7 @@ Join us for an engaging 3-hour free online workshop designed to enhance your R p
 
 ### Daniel Sabanés Bové
 
-Ph.D., RCONIS
+Director, RCONIS
 
 Daniel Sabanés Bové studied statistics and obtained his PhD in 2013. He started his career with 5 years in Roche as a biostatistician, then worked 2 years at Google as a Data Scientist, before rejoining Roche in 2020, where he founded and led the Statistical Engineering team. Daniel is co-founder of RCONIS, (co-)author of multiple published R packages, and currently a co-chair of the openstatsware.org working group.
 
