@@ -1,4 +1,4 @@
-# Tutorial: Good Software Engineering Practice for R Packages
+# Workshop: Good Software Engineering Practice for R Packages
 
 **R in Pharma APAC 2024, virtual event**
 
