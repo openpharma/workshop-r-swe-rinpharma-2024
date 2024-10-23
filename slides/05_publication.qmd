@@ -2,6 +2,7 @@
 title: "5 Publication"
 description: "Publication of R packages + practical<br/>[Photo CC0 by Andrea Piacquadio on pexels.com]{.copyright}"
 image: thumbnails/publish.jpg
+author: Daniel Sabanes Bove
 ---
 
 # Website with `pkgdown`
@@ -18,7 +19,7 @@ image: thumbnails/publish.jpg
 - Main configuration happens in `_pkgdown.yml` file
 - Many customizations can be applied, but bulk of work during development is
   updating the `reference` section with names of `.Rd` files
-  
+
 ## Example `_pkgdown.yml` File
 
 ```yaml
@@ -74,10 +75,10 @@ reference:
     same license).
   - "Copyleft": Stricter. Same rights need to be preserved in derivative works.
 - R itself is licensed under GPL, but packages can choose, e.g.:
-    - `usethis::use_mit_license()` for permissive MIT 
+    - `usethis::use_mit_license()` for permissive MIT
     - `usethis::use_gpl_license()` for copyleft GPL
 - Include minimum version, e.g. `GPL (>= 3)`
-    
+
 ## Licensing (cont'd)
 
 - Need to be careful here when you bundle any code from other software
@@ -93,18 +94,18 @@ reference:
   repository public
 - This allows for easy open source contributions from other developers via pull
   requests
-- Please check with your organization first: 
+- Please check with your organization first:
   - Are they ok to publish the software?
-  - What is the appropriate copyright holder? 
+  - What is the appropriate copyright holder?
 - Also allows bugs to be filed and to have
   the GitHub issues page in the package description
-  
+
 ## Versioning
 
 - The `Version` field defines the package version
 - Syntax: Three integers separated by `.` or `-`
   - Canonical form is: `x.y-z`, equivalent to `x.y.z`
-- Useful conventions of "semantic versioning": 
+- Useful conventions of "semantic versioning":
   - `x` is major: Increment this for breaking changes
   - `y` is minor: Increment this for new features
   - `z` is patch: Increment this for bug fixes only
@@ -118,7 +119,7 @@ reference:
 ## CRAN (The Comprehensive R Archive Network)
 
 - CRAN is the central repository for R packages
-- It has additional requirements beyond the standard package ones, which are 
+- It has additional requirements beyond the standard package ones, which are
   described in the Repository Policy
 - Submitting a package indicates agreement with the policy
 - In particular: "The time of the volunteers is CRAN’s most precious resource, and they reserve the right to remove or modify packages on CRAN without notice or explanation (although notification will usually be given)."
@@ -132,7 +133,7 @@ reference:
   - Additional `Contact` field could be used
 - Citations in author-year style, followed by `<doi:...>`
 - Reducing run time of tests, checks, examples, vignettes is important
-- Need to provide cross-platform portable code: 
+- Need to provide cross-platform portable code:
   CRAN runs checks on Windows, Mac, several Linux OS
 
 ## CRAN (cont'd)
@@ -157,7 +158,7 @@ Example message informing about the rejection of the last
 [rpact](https://cran.r-project.org/package=rpact) submission:
 
 > Dear maintainer,
-> 
+>
 > package rpact_3.3.2.tar.gz does not pass the incoming checks automatically,
 > please see the following pre-tests: \
 > Windows:
@@ -201,7 +202,7 @@ Example message informing about the rejection of the last
 - Tags are a feature of Git, i.e., not specific to GitHub
 - Git can tag specific points in the code history as being important
 - Typically, for each release, create a tag `vx.y.z`
-- The value here is that users can later check out the package 
+- The value here is that users can later check out the package
   in the state of this release version
   - Download in R: `remotes::install_github("org/package", ref = "vx.y.z")`
   - Comparison of versions are also possible, etc.
@@ -256,13 +257,13 @@ Use the same repository created from template [https://github.com/kkmann/simulat
   - Need to change remote to `git`
 - Deploy the website through `use_github_action("pkgdown")`
   - (Optional) Check the automatic github page deploy action
-  
+
 # License Information
 
-- Creators (initial authors): 
+- Creators (initial authors):
   Daniel Sabanes Bove [`r fontawesome::fa("github")`](https://github.com/danielinteractive/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/),
   Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/)
-- In the current version, changes were done by (later authors): 
+- In the current version, changes were done by (later authors):
   Liming Li [`r fontawesome::fa("github")`](https://github.com/clarkliming),
   Philippe Boileau [`r fontawesome::fa("globe")`](https://pboileau.ca/)
 {{< include _license_footer.qmd >}}

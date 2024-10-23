@@ -4,9 +4,8 @@ project:
 
 website:
   title: "GSWEP4R Tutorial"
-  description: "useR! Tutorial: Good Software Engineering Practice with R"
-  favicon: favicon.ico
-  site-url: https://RCONIS.github.io/user2024-tutorial-gswep
+  description: "R/Pharma 2024 workshop: Good Software Engineering Practice with R"
+  site-url: https://openpharma.github.io/workshop-r-swe-rinpharma-2024
   search: true
   navbar:
     left:
