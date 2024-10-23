@@ -1,0 +1,19 @@
+install.packages(c(
+    "tidyverse",
+    "testthat",
+    "covr",
+    "data.table",
+    "usethis",
+    "roxygen2",
+    "devtools",
+    "rlang",
+    "checkmate",
+    "knitr",
+    "rmarkdown",
+    "glue",
+    "httr",
+    "styler",
+    "lintr",
+    "pkgdown",
+    "remotes"
+))

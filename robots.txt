@@ -1,0 +1,1 @@
+Sitemap: https://openpharma.github.io/workshop-r-swe-rinpharma-2024/sitemap.xml
