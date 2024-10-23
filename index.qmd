@@ -38,7 +38,7 @@ Welcome to the homepage of the tutorial *"Good Software Engineering Practice for
 
 ## Event Details
 
-This live event will be held on Monday October 28, 2024 12:00 - 15:00 GMT+8 as a [virtual tutorial](https://events.zoom.us/ev/AvobJEOTVwkUnH6_TgLZDZJauk4dxfm5jCG8JFNN9zukOcsVLvTN~AmO5XY5HRBcxkKG6Hga1aXZaYtpBSER6jHms1seP-NNOA0dhcQZUGJ2NWg).
+This live online event will be held on Monday October 28, 2024 12:00 - 15:00 GMT+8 as a [virtual workshop](https://events.zoom.us/ev/AvobJEOTVwkUnH6_TgLZDZJauk4dxfm5jCG8JFNN9zukOcsVLvTN~AmO5XY5HRBcxkKG6Hga1aXZaYtpBSER6jHms1seP-NNOA0dhcQZUGJ2NWg).
 
 ## Description
 
