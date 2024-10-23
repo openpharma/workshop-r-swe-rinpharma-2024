@@ -2,7 +2,7 @@
 title: "4 Ensuring Quality"
 description: "Package quality + exercise"
 image: thumbnails/quality.jpg
-author: Friedrich Pahlke
+author: Joe Zhu
 ---
 
 # Apply Clean Code Rules
@@ -247,7 +247,7 @@ getMean <- function(x) {
     sum(x) / length(x)
 }
 
-# returns TRUE if the length of x is 
+# returns TRUE if the length of x is
 # an even number; FALSE otherwise
 isLengthAnEvenNumber <- function(x) {
     length(x) %% 2 == 0
@@ -257,7 +257,7 @@ isLengthAnEvenNumber <- function(x) {
 getMedian <- function(x) {
     centerIndices <- ceiling(length(x) / 2)
     if (isLengthAnEvenNumber(x)) {
-        centerIndices <- c(centerIndices, 
+        centerIndices <- c(centerIndices,
              centerIndices + 1)
     }
     getMean(x[centerIndices])
@@ -303,7 +303,7 @@ getMedian <- function(x) {
     if (isLengthAnEvenNumber(x)) {
         centerIndices <- c(centerIndices, centerIndices + 1)
     }
-    getMean(x[centerIndices]) 
+    getMean(x[centerIndices])
 }
 ```
 
@@ -437,7 +437,7 @@ R package [testthat](https://cran.r-project.org/package=testthat)
     supported
 -   Also performance testing, e.g., with help of
     [microbenchmark](https://cran.r-project.org/package=microbenchmark) package
-    
+
 **Example**: unit test passed
 
 ```{r, echo = TRUE}
@@ -481,7 +481,7 @@ getMedian <- function(x, na.rm = TRUE) {
     } else if (isLengthAnEvenNumber(x)) {
         centerIndices <- c(centerIndices, centerIndices + 1)
     }
-    getMean(sort(x)[centerIndices]) 
+    getMean(sort(x)[centerIndices])
 }
 ```
 
@@ -569,10 +569,10 @@ report(x)
 Let's assume we have added a generic function to cat a simulation result:
 
 ```{r, echo = TRUE, eval = FALSE}
-#' 
+#'
 #' @export
 #'
-cat.SimulationResult <- function(... , file = "", sep = " ", 
+cat.SimulationResult <- function(... , file = "", sep = " ",
         fill = FALSE, labels = NULL, append = FALSE) {
     args <- list(...)
 }
@@ -728,6 +728,10 @@ Check if your package is ready for release with the
 
 # License information
 
-- Creators (initial authors): 
+- Creators (initial authors):
   Friedrich Pahlke [`r fontawesome::fa("github")`](https://github.com/fpahlke/) [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/pahlke/)
+- In the current version, changes were done by (later authors):
+  Joe Zhu
+  [`r fontawesome::fa("github")`](https://github.com/shajoezhu)
+  [`r fontawesome::fa("linkedin")`](http://www.linkedin.com/in/joe-zhu-464b5818)
 {{< include _license_footer.qmd >}}
