@@ -55,19 +55,19 @@ Learn, understand, and practice good software engineering rules. Participants wi
 | Time                | Topic                                        |
 |---------------------|:---------------------------------------------|
 | 12:00 - 12:15 GMT+8 | Introduction and outline                     |
-| 12:15 - 12:55 GMT+8 | R packages, what are they? + practical       |
-| 12:55 - 13:25 GMT+8 | Workflow for creating R packages + practical |
+| 12:15 - 12:55 GMT+8 | R packages, what are they?                   |
+| 12:55 - 13:25 GMT+8 | Workflow for creating R packages             |
 | 13:25 - 13:40 GMT+8 | Break                                        |
-| 13:40 - 14:20 GMT+8 | Package quality + exercise                   |
-| 14:20 - 14:50 GMT+8 | Publication + practical                      |
-| 15:50 - 15:00 GMT+8 | Conclusion                                   |
+| 13:40 - 14:20 GMT+8 | Package quality                              |
+| 14:20 - 14:50 GMT+8 | Publication                                  |
+| 14:50 - 15:00 GMT+8 | Conclusion                                   |
 
 ## Prerequisites & Technical Setup
 
 Prior to the course, participants should:
 
 -   Install the latest [R](https://www.r-project.org/) and [RStudio](https://posit.co/download/rstudio-desktop/) software.
--   Install [Rtools](https://cran.r-project.org/bin/windows/Rtools/rtools43/rtools.html) (only on Windows).
+-   Install [Rtools](https://cran.r-project.org/bin/windows/Rtools/rtools44/rtools.html) (only on Windows).
 -   Install additional R packages using the [installation script](slides/download/install.R).
 -   Download and extract [simulatr.zip](slides/download/simulatr.zip)
 

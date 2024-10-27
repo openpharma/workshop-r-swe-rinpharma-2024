@@ -18,11 +18,7 @@ website:
   page-footer:
     center:
       - text: "About"
-        href: https://rconis.com/about/
-      - text: "Imprint"
-        href: https://rconis.com/imprint/
-      - text: "Contact"
-        href: https://rconis.com/contact/
+        href: https://rinpharma.com/
 
 format:
   html:
