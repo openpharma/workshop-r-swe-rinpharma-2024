@@ -355,6 +355,12 @@ CCR#8: TDD
 
 ![](thumbnails/testing.jpg){fig-align="center"}
 
+## Share Your Experience
+
+Have you ever written unit tests for your code?
+
+- Enter `yes` or `no` in the chat
+
 ## Verification vs Validation
 
 ::: columns

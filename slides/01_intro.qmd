@@ -21,10 +21,10 @@ author: Daniel Sabanés Bové and Joe Zhu
 -   Biostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for the last 4 years
 -   Co-founder of [RCONIS](https://rconis.com)
 -   Multiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of `openstatsware`
--   Feel free to connect
-    [`r fontawesome::fa("linkedin")`](https://www.linkedin.com/in/danielsabanesbove/)
-    [`r fontawesome::fa("github")`](https://github.com/danielinteractive)
-    [`r fontawesome::fa("globe")`](https://rconis.com)
+-   Feel free to connect at
+    [`r fontawesome::fa("linkedin")` LinkedIn](https://www.linkedin.com/in/danielsabanesbove/),
+    [`r fontawesome::fa("github")` GitHub](https://github.com/danielinteractive) or 
+    [`r fontawesome::fa("globe")` RCONIS](https://rconis.com)
 :::
 :::
 
@@ -48,7 +48,7 @@ author: Daniel Sabanés Bové and Joe Zhu
 ::: columns
 ::: {.column width="70%"}
 - [openstatsware.org](https://openstatsware.org)
-- Since: 19 August 2022 - almost 2 years now!
+- Since: 19 August 2022 - more than 2 years already!
 - Where: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)
 - Who: Currently more than 50 statisticians from more than 30 organizations
 - What: Engineer packages and spread best practices
@@ -62,32 +62,30 @@ author: Daniel Sabanés Bové and Joe Zhu
 ## What you will learn here
 
 -   Understand the basic structure of an R package
--   Create your own R `r fontawesome::fa("cube")`
--   Learn about & apply professional `r fontawesome::fa("cube")` development workflow
--   Learn & apply fundamentals of quality control for R `r fontawesome::fa("cube")`
+-   How to Create your own R `r fontawesome::fa("cube")`
+-   Learn about the professional `r fontawesome::fa("cube")` development workflow
+-   Learn and apply fundamentals of quality control for R `r fontawesome::fa("cube")`
 -   Learn how to make an R `r fontawesome::fa("cube")` available to others
 
 ## Program outline
 
-| Time               | Topic                                        |
-|--------------------|:---------------------------------------------|
+| Time                | Topic                                        |
+|---------------------|:---------------------------------------------|
 | 12:00 - 12:15 GMT+8 | Introduction and outline                     |
-| 12:15 - 12:55 GMT+8 | R packages, what are they? + practical       |
-| 12:55 - 13:25 GMT+8 | Workflow for creating R packages + practical |
+| 12:15 - 12:55 GMT+8 | R packages, what are they?                   |
+| 12:55 - 13:25 GMT+8 | Workflow for creating R packages             |
 | 13:25 - 13:40 GMT+8 | Break                                        |
-| 13:40 - 14:20 GMT+8 | Package quality + exercise                   |
-| 14:20 - 14:50 GMT+8 | Publication + practical                      |
-| 15:50 - 15:00 GMT+8 | Conclusion                                   |
-
+| 13:40 - 14:20 GMT+8 | Package quality                              |
+| 14:20 - 14:50 GMT+8 | Publication                                  |
+| 14:50 - 15:00 GMT+8 | Conclusion                                   |
 
 ## House-keeping
 
 -   Course website at [https://openpharma.github.io/workshop-r-swe-rinpharma-2024](https://openpharma.github.io/workshop-r-swe-rinpharma-2024)
     -   all slides
     -   sources available at [https://github.com/openpharma/workshop-r-swe-rinpharma-2024](https://github.com/openpharma/workshop-r-swe-rinpharma-2024)
+    -   short link: [https://tinyurl.com/3st8rvkn](https://tinyurl.com/3st8rvkn)
     -   all materials CC-BY-SA 4.0
--   We offer a [gitter chat channel](https://matrix.to/#/#workshop-r-swe_community:gitter.im)
-    -   use to ask your peers questions
 
 ## What you will need
 
@@ -100,9 +98,9 @@ author: Daniel Sabanés Bové and Joe Zhu
 
 ## Speed intros and what would you like to learn?
 
-- Name? `r emoji::emoji("face")`
-- Organization? `r emoji::emoji("office")`
-- Motivation for this workshop/ what would you like to learn `r emoji::emoji("brain")`
+- Please enter the following in the chat - in one sentence:
+  - Your name `r emoji::emoji("face")`
+  - Motivation for this workshop/ what would you like to learn `r emoji::emoji("brain")`
 
 ## What do we mean by GSWEP4R\*?
 

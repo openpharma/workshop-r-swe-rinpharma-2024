@@ -189,9 +189,11 @@ Example message informing about the rejection of the last
 ::: {.column width="70%"}
 - Free `R CMD check` runs on [different operating systems](https://docs.r-hub.io/#which-platform) before submitting to CRAN
 - Supported by the R consortium
-- Typically used via the [website](https://builder.r-hub.io/)
-- There is also an R API: `rhub::check()` is comfortable
-  - Note: New API with R-hub v2 since a few weeks ([details](https://r-hub.github.io/rhub/articles/rhubv2.html))
+- Now works with GitHub Actions:
+  1. Put your package in a GitHub repository
+  1. Use `rhub::rhub_setup()` for setting up the GitHub action
+  1. Push this change to GitHub
+  1. Use `rhub::rhub_check()` to check your package
 :::
 :::
 
@@ -244,19 +246,6 @@ Example message informing about the rejection of the last
 - [CRAN Repository Policy](https://cran.r-project.org/web/packages/policies.html)
 - [R-hub builder](https://builder.r-hub.io/)
 - [Bioconductor packages](https://contributions.bioconductor.org/index.html)
-
-# Exercise
-
-Use the same repository created from template [https://github.com/kkmann/simulatr](https://github.com/kkmann/simulatr)
-
-- Run CRAN like checks in RStudio: use `--as-cran` in check options
-- Look at the CI/CD checks reported on your GitHub repository
-  - Where are the `R CMD check` results?
-- Enable github page through `use_pkgdown_github_pages`
-- Deploy the website with `pkgdown`
-  - Need to change remote to `git`
-- Deploy the website through `use_github_action("pkgdown")`
-  - (Optional) Check the automatic github page deploy action
 
 # License Information
 

@@ -24,6 +24,14 @@ author: Daniel Sabanés Bové
 - How to do this in a methodical and sustainable way
 - Give tips and tricks based on practical experience
 
+## How Familiar Are You with R Packages?
+
+Please enter in the chat:
+
+- 0 if you have never written an R package
+- 1 if you have written an R package but never submitted to CRAN
+- 2 if you have written an R package and submitted to CRAN
+
 # Contents of a Package
 
 ## How is a Package Structured?
