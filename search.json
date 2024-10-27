@@ -95,14 +95,14 @@
     "href": "slides/03_workflow.html#example---step-3-packaging-4",
     "title": "3 An R Package Engineering Workflow",
     "section": "Example - Step 3: Packaging",
-    "text": "Example - Step 3: Packaging\nThe output is impractical, e.g., we need to scroll down:\n\nx &lt;- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7, sd1 = 3, sd2 = 4)\nx\n\n$n1\n[1] 50\n\n$n2\n[1] 50\n\n$mean1\n[1] 5\n\n$mean2\n[1] 7\n\n$sd1\n[1] 3\n\n$sd2\n[1] 4\n\n$data\n    group     values\n1       1  6.1721301\n2       1  7.5937301\n3       1  8.0695510\n4       1 11.6934109\n5       1  7.3357936\n6       1  1.1224888\n7       1  0.7675937\n8       1  4.4253807\n9       1  3.7795360\n10      1  3.1922987\n11      1  6.6414151\n12      1  4.4929265\n13      1  8.4231186\n14      1  2.8112677\n15      1  4.8606201\n16      1  4.2111246\n17      1  5.5997209\n18      1  5.2836091\n19      1 -0.2652530\n20      1  7.5570804\n21      1  7.2139421\n22      1 -1.4115061\n23      1  2.2245722\n24      1  8.6591893\n25      1  9.3291316\n26      1 -0.9885835\n27      1  5.6051647\n28      1  7.8229848\n29      1  6.5787691\n30      1  2.8424862\n31      1  5.3438540\n32      1 -0.9982395\n33      1  7.0679560\n34      1  3.2514364\n35      1  6.1375248\n36      1  6.8641120\n37      1 10.2362452\n38      1  6.3072622\n39      1  8.3268488\n40      1  6.4669317\n41      1  4.3716275\n42      1  4.2581119\n43      1  4.9124296\n44      1  9.8684972\n45      1  1.8394962\n46      1  2.0097357\n47      1  4.8277983\n48      1  3.4005571\n49      1  9.3905138\n50      1  7.6616702\n51      2  9.3895741\n52      2 15.7970406\n53      2 11.6581026\n54      2  8.6908352\n55      2  9.8642939\n56      2  6.0373760\n57      2  6.8331280\n58      2  8.1792162\n59      2 12.6622334\n60      2  7.0724154\n61      2  5.7251724\n62      2 10.1069679\n63      2  2.4486293\n64      2  3.2823079\n65      2 13.6235449\n66      2  5.0291961\n67      2 11.0731476\n68      2 -1.0022234\n69      2  8.5516150\n70      2  9.1247356\n71      2  3.6759549\n72      2  3.6657406\n73      2  5.5237509\n74      2  9.4962342\n75      2  4.2099926\n76      2  8.9947481\n77      2  2.9748616\n78      2  7.7881690\n79      2  2.6333966\n80      2 13.6924752\n81      2 14.3094972\n82      2  6.7738405\n83      2  9.8690576\n84      2  6.0895844\n85      2  2.4581595\n86      2  7.1136986\n87      2  7.5747082\n88      2  9.7917986\n89      2  9.3849696\n90      2 11.3775694\n91      2 11.9320106\n92      2  3.5694718\n93      2 12.9364573\n94      2 -0.7263249\n95      2  5.2763626\n96      2 11.7388971\n97      2 16.3025867\n98      2  3.6254642\n99      2 13.0355905\n100     2  0.1546114\n\nattr(,\"class\")\n[1] \"SimulationResult\"\n\n\n\nSolution: implement generic function print"
+    "text": "Example - Step 3: Packaging\nThe output is impractical, e.g., we need to scroll down:\n\nx &lt;- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5, mean2 = 7, sd1 = 3, sd2 = 4)\nx\n\n$n1\n[1] 50\n\n$n2\n[1] 50\n\n$mean1\n[1] 5\n\n$mean2\n[1] 7\n\n$sd1\n[1] 3\n\n$sd2\n[1] 4\n\n$data\n    group      values\n1       1  5.53626527\n2       1  4.31974157\n3       1  7.09586225\n4       1  9.81905385\n5       1  7.66855581\n6       1  7.49156039\n7       1 -2.39818485\n8       1 10.86783802\n9       1  4.81838564\n10      1  7.19560045\n11      1  2.76588413\n12      1  7.72979858\n13      1  5.65787736\n14      1  7.92959780\n15      1  5.32181430\n16      1  5.13558650\n17      1  2.26968024\n18      1  6.14328439\n19      1 11.60402155\n20      1  4.66401920\n21      1  6.30586461\n22      1  7.95899890\n23      1  2.51373568\n24      1  1.72929040\n25      1  2.69271376\n26      1  8.96892251\n27      1  4.73221663\n28      1  5.49864839\n29      1  1.14832959\n30      1  4.11952363\n31      1  2.23859437\n32      1  1.60026712\n33      1  7.45321597\n34      1  5.72165838\n35      1  9.79113944\n36      1  3.64157323\n37      1  4.28037944\n38      1  3.45142944\n39      1  4.51025176\n40      1  7.20187919\n41      1  2.31165836\n42      1  4.32280192\n43      1  7.11574959\n44      1  4.25983451\n45      1  5.00246742\n46      1  6.31812829\n47      1  3.62197322\n48      1  9.74577614\n49      1  2.51011438\n50      1  6.86766535\n51      2  3.39830637\n52      2  9.95716487\n53      2  5.29955581\n54      2  7.39013984\n55      2  8.44197588\n56      2 11.56031701\n57      2  6.47155550\n58      2 10.88980472\n59      2  5.90957429\n60      2  4.28746944\n61      2  9.56370691\n62      2 12.81882469\n63      2  6.78521295\n64      2  6.86218160\n65      2  3.10197874\n66      2  9.77373993\n67      2 12.91446536\n68      2  0.50270315\n69      2 11.35204396\n70      2  3.56514026\n71      2 -0.06677584\n72      2 11.41099888\n73      2  6.42409576\n74      2  3.99605705\n75      2 13.16585029\n76      2  2.54253514\n77      2 10.22558654\n78      2 -5.14300038\n79      2 12.99171167\n80      2  7.78131137\n81      2  7.12656682\n82      2 13.81333744\n83      2 -0.08281967\n84      2 11.09541868\n85      2 -1.09221262\n86      2  6.62239417\n87      2 10.11151094\n88      2 -1.08415102\n89      2  5.95640699\n90      2  0.62913956\n91      2  1.00058307\n92      2  9.32748681\n93      2  1.47461698\n94      2  3.22483203\n95      2  9.69898562\n96      2 16.02206901\n97      2 17.01795042\n98      2  4.77769511\n99      2  5.54388893\n100     2  8.35934888\n\nattr(,\"class\")\n[1] \"SimulationResult\"\n\n\n\nSolution: implement generic function print"
   },
   {
     "objectID": "slides/03_workflow.html#example---step-3-packaging-5",
     "href": "slides/03_workflow.html#example---step-3-packaging-5",
     "title": "3 An R Package Engineering Workflow",
     "section": "Example - Step 3: Packaging",
-    "text": "Example - Step 3: Packaging\nGeneric function print:\n\nCodeRoxygenOutput\n\n\n\nprint.SimulationResult &lt;- function(x, ...) {\n    args &lt;- list(n1 = x$n1, n2 = x$n2,\n        mean1 = x$mean1, mean2 = x$mean2, sd1 = x$sd1, sd2 = x$sd2)\n\n    print(list(\n        args = format(args),\n        data = dplyr::tibble(x$data)\n    ), ...)\n}\nx\n\n\n\n\n#' @title\n#' Print Simulation Result\n#'\n#' @description\n#' Generic function to print a `SimulationResult` object.\n#'\n#' @param x a \\code{SimulationResult} object to print.\n#' @param ... further arguments passed to or from other methods.\n#'\n#' @examples\n#' x &lt;- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5,\n#'      mean2 = 7, sd1 = 3, sd2 = 4, seed = 123)\n#' print(x)\n#'\n#' @export\n\n\n\n\n\n$args\n   n1    n2 mean1 mean2   sd1   sd2 \n \"50\"  \"50\"   \"5\"   \"7\"   \"3\"   \"4\" \n\n$data\n# A tibble: 100 × 2\n   group values\n   &lt;dbl&gt;  &lt;dbl&gt;\n 1     1  6.17 \n 2     1  7.59 \n 3     1  8.07 \n 4     1 11.7  \n 5     1  7.34 \n 6     1  1.12 \n 7     1  0.768\n 8     1  4.43 \n 9     1  3.78 \n10     1  3.19 \n# ℹ 90 more rows"
+    "text": "Example - Step 3: Packaging\nGeneric function print:\n\nCodeRoxygenOutput\n\n\n\nprint.SimulationResult &lt;- function(x, ...) {\n    args &lt;- list(n1 = x$n1, n2 = x$n2,\n        mean1 = x$mean1, mean2 = x$mean2, sd1 = x$sd1, sd2 = x$sd2)\n\n    print(list(\n        args = format(args),\n        data = dplyr::tibble(x$data)\n    ), ...)\n}\nx\n\n\n\n\n#' @title\n#' Print Simulation Result\n#'\n#' @description\n#' Generic function to print a `SimulationResult` object.\n#'\n#' @param x a \\code{SimulationResult} object to print.\n#' @param ... further arguments passed to or from other methods.\n#'\n#' @examples\n#' x &lt;- getSimulatedTwoArmMeans(n1 = 50, n2 = 50, mean1 = 5,\n#'      mean2 = 7, sd1 = 3, sd2 = 4, seed = 123)\n#' print(x)\n#'\n#' @export\n\n\n\n\n\n$args\n   n1    n2 mean1 mean2   sd1   sd2 \n \"50\"  \"50\"   \"5\"   \"7\"   \"3\"   \"4\" \n\n$data\n# A tibble: 100 × 2\n   group values\n   &lt;dbl&gt;  &lt;dbl&gt;\n 1     1   5.54\n 2     1   4.32\n 3     1   7.10\n 4     1   9.82\n 5     1   7.67\n 6     1   7.49\n 7     1  -2.40\n 8     1  10.9 \n 9     1   4.82\n10     1   7.20\n# ℹ 90 more rows"
   },
   {
     "objectID": "slides/03_workflow.html#preparation",
@@ -130,7 +130,7 @@
     "href": "slides/01_intro.html#daniel",
     "title": "1 Introduction",
     "section": "Daniel",
-    "text": "Daniel\n\n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for the last 4 years\nCo-founder of RCONIS\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware\nFeel free to connect"
+    "text": "Daniel\n\n\n\n\n\nPh.D. in Statistics from University of Zurich, Bayesian Model Selection\nBiostatistician at Roche for 5 years, Data Scientist at Google for 2 years, Statistical Software Engineer at Roche for the last 4 years\nCo-founder of RCONIS\nMultiple R packages on CRAN and Bioconductor, co-wrote book on Likelihood and Bayesian Inference, chair of openstatsware\nFeel free to connect at  LinkedIn,  GitHub or  RCONIS"
   },
   {
     "objectID": "slides/01_intro.html#joe",
@@ -144,28 +144,28 @@
     "href": "slides/01_intro.html#openstatsware",
     "title": "1 Introduction",
     "section": "openstatsware",
-    "text": "openstatsware\n\n\n\nopenstatsware.org\nSince: 19 August 2022 - almost 2 years now!\nWhere: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)\nWho: Currently more than 50 statisticians from more than 30 organizations\nWhat: Engineer packages and spread best practices"
+    "text": "openstatsware\n\n\n\nopenstatsware.org\nSince: 19 August 2022 - more than 2 years already!\nWhere: American Statistical Association (ASA) Biopharmaceutical Section (BIOP), European Federation of Statisticians in the Pharmaceutical Industry (EFSPI)\nWho: Currently more than 50 statisticians from more than 30 organizations\nWhat: Engineer packages and spread best practices"
   },
   {
     "objectID": "slides/01_intro.html#what-you-will-learn-here",
     "href": "slides/01_intro.html#what-you-will-learn-here",
     "title": "1 Introduction",
     "section": "What you will learn here",
-    "text": "What you will learn here\n\nUnderstand the basic structure of an R package\nCreate your own R \nLearn about & apply professional  development workflow\nLearn & apply fundamentals of quality control for R \nLearn how to make an R  available to others"
+    "text": "What you will learn here\n\nUnderstand the basic structure of an R package\nHow to Create your own R \nLearn about the professional  development workflow\nLearn and apply fundamentals of quality control for R \nLearn how to make an R  available to others"
   },
   {
     "objectID": "slides/01_intro.html#program-outline",
     "href": "slides/01_intro.html#program-outline",
     "title": "1 Introduction",
     "section": "Program outline",
-    "text": "Program outline\n\n\n\nTime\nTopic\n\n\n\n\n12:00 - 12:15 GMT+8\nIntroduction and outline\n\n\n12:15 - 12:55 GMT+8\nR packages, what are they? + practical\n\n\n12:55 - 13:25 GMT+8\nWorkflow for creating R packages + practical\n\n\n13:25 - 13:40 GMT+8\nBreak\n\n\n13:40 - 14:20 GMT+8\nPackage quality + exercise\n\n\n14:20 - 14:50 GMT+8\nPublication + practical\n\n\n15:50 - 15:00 GMT+8\nConclusion"
+    "text": "Program outline\n\n\n\nTime\nTopic\n\n\n\n\n12:00 - 12:15 GMT+8\nIntroduction and outline\n\n\n12:15 - 12:55 GMT+8\nR packages, what are they?\n\n\n12:55 - 13:25 GMT+8\nWorkflow for creating R packages\n\n\n13:25 - 13:40 GMT+8\nBreak\n\n\n13:40 - 14:20 GMT+8\nPackage quality\n\n\n14:20 - 14:50 GMT+8\nPublication\n\n\n14:50 - 15:00 GMT+8\nConclusion"
   },
   {
     "objectID": "slides/01_intro.html#house-keeping",
     "href": "slides/01_intro.html#house-keeping",
     "title": "1 Introduction",
     "section": "House-keeping",
-    "text": "House-keeping\n\nCourse website at https://openpharma.github.io/workshop-r-swe-rinpharma-2024\n\nall slides\nsources available at https://github.com/openpharma/workshop-r-swe-rinpharma-2024\nall materials CC-BY-SA 4.0\n\nWe offer a gitter chat channel\n\nuse to ask your peers questions"
+    "text": "House-keeping\n\nCourse website at https://openpharma.github.io/workshop-r-swe-rinpharma-2024\n\nall slides\nsources available at https://github.com/openpharma/workshop-r-swe-rinpharma-2024\nshort link: https://tinyurl.com/3st8rvkn\nall materials CC-BY-SA 4.0"
   },
   {
     "objectID": "slides/01_intro.html#what-you-will-need",
@@ -179,7 +179,7 @@
     "href": "slides/01_intro.html#speed-intros-and-what-would-you-like-to-learn",
     "title": "1 Introduction",
     "section": "Speed intros and what would you like to learn?",
-    "text": "Speed intros and what would you like to learn?\n\nName? 😕\nOrganization? 🏢\nMotivation for this workshop/ what would you like to learn 🧠"
+    "text": "Speed intros and what would you like to learn?\n\nPlease enter the following in the chat - in one sentence:\n\nYour name 🐵\nMotivation for this workshop/ what would you like to learn 🧠"
   },
   {
     "objectID": "slides/01_intro.html#what-do-we-mean-by-gswep4r",
@@ -229,6 +229,13 @@
     "title": "2 R packages",
     "section": "What We Want to Talk About Now",
     "text": "What We Want to Talk About Now\n\nHow to write, build, test, and check your own package 😊\nHow to do this in a methodical and sustainable way\nGive tips and tricks based on practical experience"
+  },
+  {
+    "objectID": "slides/02_r_packages.html#how-familiar-are-you-with-r-packages",
+    "href": "slides/02_r_packages.html#how-familiar-are-you-with-r-packages",
+    "title": "2 R packages",
+    "section": "How Familiar Are You with R Packages?",
+    "text": "How Familiar Are You with R Packages?\nPlease enter in the chat:\n\n0 if you have never written an R package\n1 if you have written an R package but never submitted to CRAN\n2 if you have written an R package and submitted to CRAN"
   },
   {
     "objectID": "slides/02_r_packages.html#how-is-a-package-structured",
@@ -431,7 +438,7 @@
     "href": "index.html#schedule",
     "title": "Good Software Engineering Practice for R Packages",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\nTime\nTopic\n\n\n\n\n12:00 - 12:15 GMT+8\nIntroduction and outline\n\n\n12:15 - 12:55 GMT+8\nR packages, what are they? + practical\n\n\n12:55 - 13:25 GMT+8\nWorkflow for creating R packages + practical\n\n\n13:25 - 13:40 GMT+8\nBreak\n\n\n13:40 - 14:20 GMT+8\nPackage quality + exercise\n\n\n14:20 - 14:50 GMT+8\nPublication + practical\n\n\n15:50 - 15:00 GMT+8\nConclusion"
+    "text": "Schedule\n\n\n\nTime\nTopic\n\n\n\n\n12:00 - 12:15 GMT+8\nIntroduction and outline\n\n\n12:15 - 12:55 GMT+8\nR packages, what are they?\n\n\n12:55 - 13:25 GMT+8\nWorkflow for creating R packages\n\n\n13:25 - 13:40 GMT+8\nBreak\n\n\n13:40 - 14:20 GMT+8\nPackage quality\n\n\n14:20 - 14:50 GMT+8\nPublication\n\n\n14:50 - 15:00 GMT+8\nConclusion"
   },
   {
     "objectID": "index.html#prerequisites-technical-setup",
@@ -460,6 +467,13 @@
     "title": "Slides",
     "section": "",
     "text": "1 Introduction\n\n\nR/Pharma workshop: Good Software Engineering Practice for R Packages\n\n\nIntroduction and outline of program\n\n\n\n\n\nOct 28, 2024\n\n\nDaniel Sabanés Bové and Joe Zhu\n\n\n\n\n\n\n\n\n\n\n\n\n2 R packages\n\n\nR/Pharma workshop: Good Software Engineering Practice for R Packages\n\n\nR package syntax + practical\n\n\n\n\n\nOct 28, 2024\n\n\nDaniel Sabanés Bové\n\n\n\n\n\n\n\n\n\n\n\n\n3 An R Package Engineering Workflow\n\n\nR/Pharma workshop: Good Software Engineering Practice for R Packages\n\n\nWorkflow for creating R packages + practical\n\n\n\n\n\nOct 28, 2024\n\n\nJoe Zhu\n\n\n\n\n\n\n\n\n\n\n\n\n4 Ensuring Quality\n\n\nR/Pharma workshop: Good Software Engineering Practice for R Packages\n\n\nPackage quality + exercise\n\n\n\n\n\nOct 28, 2024\n\n\nJoe Zhu\n\n\n\n\n\n\n\n\n\n\n\n\n5 Publication\n\n\nR/Pharma workshop: Good Software Engineering Practice for R Packages\n\n\nPublication of R packages + practicalPhoto CC0 by Andrea Piacquadio on pexels.com\n\n\n\n\n\nOct 28, 2024\n\n\nDaniel Sabanes Bove\n\n\n\n\n\n\n\n\n\n\n\n\n6 Conclusion\n\n\nR/Pharma workshop: Good Software Engineering Practice for R Packages\n\n\nDiscussion of learning experience, summary of workflow, conclusion and next steps.\n\n\n\n\n\nOct 28, 2024\n\n\nDaniel Sabanés Bové\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/06_conclusion.html#your-learnings",
+    "href": "slides/06_conclusion.html#your-learnings",
+    "title": "6 Conclusion",
+    "section": "Your Learnings",
+    "text": "Your Learnings\nPlease enter in the chat:\n\nWhat new skill did you learn in today’s workshop?"
   },
   {
     "objectID": "slides/06_conclusion.html#r-package-structure",
@@ -494,7 +508,7 @@
     "href": "slides/06_conclusion.html#thank-you",
     "title": "6 Conclusion",
     "section": "Thank you!",
-    "text": "Thank you!\n\n\n\n\n\nIt was great to teach you today on how to build R packages\nLet’s keep in touch e.g. via the gitter chat channel for this course that you can connect to\nWe welcome feedback on topics/format/content - reach out!"
+    "text": "Thank you!\n\n\n\n\n\nIt was great to teach you today on how to build R packages\nLet’s keep in touch e.g. via LinkedIn or GitHub\nWe welcome feedback on topics/format/content - reach out!"
   },
   {
     "objectID": "slides/06_conclusion.html#possible-next-steps",
@@ -585,7 +599,7 @@
     "href": "slides/05_publication.html#r-hub-to-the-rescue",
     "title": "5 Publication",
     "section": "R-Hub to the Rescue",
-    "text": "R-Hub to the Rescue\n\n\n\n\n\nFree R CMD check runs on different operating systems before submitting to CRAN\nSupported by the R consortium\nTypically used via the website\nThere is also an R API: rhub::check() is comfortable\n\nNote: New API with R-hub v2 since a few weeks (details)"
+    "text": "R-Hub to the Rescue\n\n\n\n\n\nFree R CMD check runs on different operating systems before submitting to CRAN\nSupported by the R consortium\nNow works with GitHub Actions:\n\nPut your package in a GitHub repository\nUse rhub::rhub_setup() for setting up the GitHub action\nPush this change to GitHub\nUse rhub::rhub_check() to check your package"
   },
   {
     "objectID": "slides/05_publication.html#tags",
@@ -726,6 +740,13 @@
     "title": "4 Ensuring Quality",
     "section": "How to apply Clean Code Rules?",
     "text": "How to apply Clean Code Rules?\nRecommended quality workflow for R packages:\n\nFollow the naming and styling guidelines (#1, #2)\nContinuously write tests and optimize the code coverage with help of tools (#7, #8)\nDocument the package and functions (#6)\nRegularly refactor your code (#1 - #7, #9)\nPublish your code on GitHub and invite colleagues to contribute (#10)"
+  },
+  {
+    "objectID": "slides/04_quality.html#share-your-experience",
+    "href": "slides/04_quality.html#share-your-experience",
+    "title": "4 Ensuring Quality",
+    "section": "Share Your Experience",
+    "text": "Share Your Experience\nHave you ever written unit tests for your code?\n\nEnter yes or no in the chat"
   },
   {
     "objectID": "slides/04_quality.html#verification-vs-validation",
